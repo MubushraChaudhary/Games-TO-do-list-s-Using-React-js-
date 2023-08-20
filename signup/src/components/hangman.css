@@ -1,0 +1,44 @@
+.hangman-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.word {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.attempts {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #333;
+  background-color: #f0f0f0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.restart {
+  margin-top: 20px;
+}
